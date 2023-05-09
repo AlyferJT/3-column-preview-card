@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.carType {
+    min-height: auto;
+    margin: 7rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carType-sedans, .carType-suvs, .carType-luxury {
+    width: 100%;
+    max-width: 25rem;
+    min-height: 35rem;
+    padding: 4rem;
+}
+
+.carType-sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: .5rem .5rem 0 0;
+}
+
+.carType-suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.carType-luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.carType-sedans-header__h1, .carType-suvs-header__h1, .carType-luxury-header__h1 {
+    font-size: 4rem;
+    margin-top: 3rem;
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.carType-sedans-info__p, .carType-suvs-info__p, .carType-luxury-info__p {
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+.carType-sedans-info__button, .carType-suvs-info__button, .carType-luxury-info__button {
+    background-color: hsl(0, 0%, 95%);
+    font-weight: bold;
+    margin-top: 2.5rem;
+    padding: 1.5rem 3rem;
+    border: none;
+    border-radius: 3rem;
+    border: 2px solid hsl(0, 0%, 95%);
+    box-sizing: border-box;
+}
+
+.carType-sedans-info__button:hover, .carType-suvs-info__button:hover, .carType-luxury-info__button:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+
+
+.carType-sedans-info__button {
+    color: hsl(31, 77%, 52%);
+}
+
+.carType-suvs-info__button {
+    color: hsl(184, 100%, 22%);
+}
+
+.carType-luxury-info__button {
+    color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: 40%;
+    }
+
+    .carType {
+        flex-direction: row;
+    }
+
+    .carType-sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: .5rem 0 0 .5rem;
+    }
+
+    .carType-luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 .5rem .5rem 0;
+    }
+
+    .carType-sedans, .carType-suvs, .carType-luxury {
+        height: 40rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .carType-sedans, .carType-suvs, .carType-luxury {
+        min-height: 30rem;
+    }
+
+    .carType-sedans-info__button, .carType-suvs-info__button, .carType-luxury-info__button {
+        margin-top: 8rem;
+    }
+
+}
